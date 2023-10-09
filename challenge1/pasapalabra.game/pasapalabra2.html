@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official Pasapalabra Game">
+    <link rel="shortcut icon" href="./styles/favicon.ico" type="image/x-icon">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="./styles/pasapalabra2.css">
+    <script type="module" src="./scripts/pasapalabra2.js" defer></script>
+</head>
+
+<body>
+    <div class="box">
+        <!-- // por norma general esto se llamaría container y debe ser un div  -->
+        <header>
+            <h1>PASAPALABRA</h1>
+        </header>
+        <main>
+            <!-- se recomienda no poner main ya que aporta semántica, sería incluso mejor poner un div con clase main -->
+            <form>
+                <div class="letters">
+                    <div class="first-letters">
+                        <span class="circle-blue">A</span>
+                        <span class="circle-blue">B</span>
+                        <span class="circle-blue">C</span>
+                        <span class="circle-blue">D</span>
+                        <span class="circle-blue">E</span>
+                        <span class="circle-blue">F</span>
+                        <span class="circle-blue">G</span>
+                        <span class="circle-blue">H</span>
+                        <span class="circle-blue">I</span>
+                        <span class="circle-blue">J</span>
+                        <span class="circle-blue">K</span>
+                        <span class="circle-blue">L</span>
+                        <span class="circle-blue">M</span>
+                        <!-- esto seria un ul en lugar de div y cada span sería li -->
+                    </div>
+                    <div class="second-letters">
+                        <span class="circle-blue">N</span>
+                        <span class="circle-blue">O</span>
+                        <span class="circle-blue">P</span>
+                        <span class="circle-blue">Q</span>
+                        <span class="circle-blue">R</span>
+                        <span class="circle-blue">S</span>
+                        <span class="circle-blue">T</span>
+                        <span class="circle-blue">U</span>
+                        <span class="circle-blue">V</span>
+                        <span class="circle-blue">W</span>
+                        <span class="circle-blue">X</span>
+                        <span class="circle-blue">Y</span>
+                        <span class="circle-blue">Z</span>
+                    </div>
+                </div>
+                <div class="questions">
+                    <p class="write-question">hola</p>
+                </div>
+                <div class="answer">
+                    <label for=""></label>
+                    <input type="text" class="answer-box" placeholder="Respuesta">
+                    <!-- los dos requisitos para que required funcione:
+                    que esté dentro de un form
+                    el botón que dispara el formulario tiene que ser de tipo submit -->
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submit-button">Enviar Respuesta</button>
+                </div>
+                <div class="correct-counter">
+                    <h3>Preguntas Acertadas</h3>
+                    <!-- estos h3 serían mejor un p, ya que no le aporta semántica -->
+                    <span class="correct-answers">0</span>
+                    <!-- estos sería un p, ya que span es inline, p es la etiqueta que mas se utiliza en html -->
+                </div>
+                <div class="incorrect-counter">
+                    <h3>Preguntas Fallidas</h3>
+                    <span class="incorrect-answers">0</span>
+                </div>
+            </form>
+            <button type="button" class="pasapalabra-button">Pasapalabra</button>
+            <div>
+                <button class="end-button">Finalizar Juego</button>
+            </div>
+            <div>
+                <button class="start-button">START</button>
+            </div>
+            <!-- un div es un agrupador de párrafos -->
+        </main>
+    </div>
+</body>
+
+</html>
